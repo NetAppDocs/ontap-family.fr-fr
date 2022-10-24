@@ -1,0 +1,110 @@
+---
+settings:
+  name: ONTAP
+  search: ontap,ontap-cli-9111,ontap-automation,ontap-metrocluster
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: fr-fr,us-en,ja-jp,zh-cn,zh-tw,ko-kr,de-de
+sidebar:
+  entries:
+  - title: Documentation des produits ONTAP
+    url: "/index.html"
+product-family:
+  sidebarlinks:
+  - title: Tout
+    tags: all,tag_data_management,tag_automation,tag_systems,tag_data_protection,tag_data_migration
+    class: active
+  - title: Automatisation
+    tags: tag_automation
+  - title: La gestion des données
+    tags: tag_data_management
+  - title: Migration des données
+    tags: tag_data_migration
+  - title: Protection des données
+    tags: tag_data_protection
+  - title: Systèmes
+    tags: tag_systems
+  tiles:
+  - title: ONTAP
+    icon: "./media/icon-onprem.png"
+    url: https://docs.netapp.com/us-en/ontap/index.html
+    summary: Déployez et gérez le logiciel de gestion de données ONTAP 9 dans votre
+      data Center à l'aide de l'interface de ligne de commande ONTAP et des dernières
+      versions de ONTAP System Manager (ONTAP 9.7 et versions ultérieures).
+    tags: all, tag_data_management, tag_data_protection
+  - title: Automatisation ONTAP
+    icon: "./media/icon-api.png"
+    url: https://docs.netapp.com/us-en/ontap-automation/index.html
+    summary: Automatisez le déploiement et l'administration de vos systèmes de stockage
+      ONTAP avec l'API REST de ONTAP et les technologies sous-jacentes.
+    tags: all, tag_automation, tag_data_management
+  - title: Commandes ONTAP
+    icon: "./media/cli.png"
+    url: https://docs.netapp.com/us-en/ontap-cli-9111/
+    summary: Découvrez les commandes disponibles dans l'interface de ligne de commandes
+      de ONTAP.
+    tags: all, tag_data_management
+  - title: ONTAP MetroCluster
+    icon: "./media/metrocluster.png"
+    url: https://docs.netapp.com/us-en/ontap-metrocluster/
+    summary: Protection du stockage grâce à la mise en cluster basée sur les baies
+      avec réplication synchrone pour assurer une disponibilité continue.
+    tags: all, tag_data_protection
+  - title: Documentation AFF et FAS
+    icon: "./media/groups_line.png"
+    url: https://docs.netapp.com/us-en/ontap-systems-family/
+    summary: Consultez la page de documentation AFF and FAS pour obtenir des informations
+      sur l'installation, la maintenance et la mise à niveau de vos systèmes AFF et
+      FAS, ainsi que de vos commutateurs de cluster et de stockage.
+    tags: all, tag_systems
+  - title: Cloud Volumes ONTAP
+    icon: "./media/icon-cvo.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html
+    summary: Déployez une instance virtuelle de ONTAP pour rendre le stockage cloud
+      plus économique, intelligent, conforme et sécurisé.
+    tags: all, tag_data_management, tag_data_protection
+  - title: Référence ONTAP EMS
+    icon: "./media/cli.png"
+    url: https://docs.netapp.com/us-en/ontap-ems-9111/
+    summary: Découvrez les événements du système de messagerie d'événements (EMS)
+      dans ONTAP.
+    tags: all, tag_data_management
+  - title: Configuration de l'hôte SAN ONTAP
+    icon: "./media/server.png"
+    url: https://docs.netapp.com/us-en/ontap-sanhost/
+    summary: Configuration des hôtes SAN ONTAP pour les protocoles NVMe, iSCSI et
+      FC
+    tags: all, tag_data_management
+  - title: ONTAP System Manager Classic
+    icon: "./media/config_line.png"
+    url: https://docs.netapp.com/us-en/ontap-sm-classic/index.html
+    summary: ONTAP 9.7 et versions antérieures utilisent une disposition différente
+      pour l'interface de ONTAP System Manager.
+    tags: all, tag_data_management
+  - title: Transition vers ONTAP 7-mode
+    icon: "./media/transition-tools.png"
+    url: https://docs.netapp.com/us-en/ontap-7mode-transition/
+    summary: Faites évoluer vos données depuis la version 7-mode existante vers les
+      plateformes de stockage en cluster modernes.
+    tags: all, tag_data_migration
+  - title: Importation de LUN étrangères ONTAP
+    icon: "./media/transition-tools.png"
+    url: https://docs.netapp.com/us-en/ontap-fli/
+    summary: Migrez des LUN à partir de baies tierces et de systèmes 7-mode vers une
+      solution de stockage NetApp moderne.
+    tags: all, tag_data_migration
+  - title: ONTAP Select
+    icon: "./media/server.png"
+    url: https://docs.netapp.com/us-en/ontap-select/
+    summary: Déployez ONTAP en tant qu'appliance de stockage Software-defined sur
+      des serveurs matériels génériques exécutant l'hyperviseur VMware ESXi.
+    tags: all, tag_data_management, tag_data_protection
+  - title: ONTAP FlexArray
+    icon: "./media/cli.png"
+    url: https://docs.netapp.com/us-en/ontap-flexarray/
+    summary: Utilisez des LUN de baies pour présenter des baies E-Series et tierces
+      en tant que stockage desservi par ONTAP.
+    tags: all, tag_data_management
