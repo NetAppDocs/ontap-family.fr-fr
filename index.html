@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head class="at-element-marker">
+  <title>Documentation des produits ONTAP</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Documentation des produits ONTAP" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/fr-fr/ontap-family/index.html" />
+	<meta property="og:description" content="ONTAP vous aide à créer une infrastructure de stockage qui réduit les coûts, accélère les charges de travail stratégiques, protège et sécurise les données." />
+  <meta property="og:image" content="https://docs.netapp.com/fr-fr/ontap-family/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="ONTAP vous aide à créer une infrastructure de stockage qui réduit les coûts, accélère les charges de travail stratégiques, protège et sécurise les données.">
+  <meta name="keywords" content=" "><!-- Icons -->
+  <link rel="icon" href="/fr-fr/ontap-family/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/ontap-family/css/netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/fr-fr/ontap-family/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/fr-fr/ontap-family/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/fr-fr/ontap-family/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/fr-fr/ontap-family/css/product-family.css' type="text/css">
+  <script src='/fr-fr/ontap-family/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/ontap-family/js/na-search.js'></script><script src='/fr-fr/ontap-family/js/na-pagenav.js'></script><script src='/fr-fr/ontap-family/js/na-utility.js'></script>
+  <script src='/fr-fr/ontap-family/js/clouddocs.js'></script>
+  <script src='/fr-fr/ontap-family/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/fr-fr/ontap-family/js/toc.js'></script>
+  <script src='/fr-fr/ontap-family/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/fr-fr/ontap-family"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/fr-fr/ontap-family/js/custom-dropdown.js'></script>
+  <script src='/fr-fr/ontap-family/js/FileSaver.min.js'></script>
+  <script src='/fr-fr/ontap-family/js/jszip-utils.min.js'></script>
+  <script src='/fr-fr/ontap-family/js/jszip.min.js'></script>
+  <script src='/fr-fr/ontap-family/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Produits et solutions</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Support et formation</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Communauté</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Témoignages clients</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/fr-fr/ontap-family/search.html"
+          data-type="widget" 
+          data-placeholder="Rechercher une documentation"
+          data-no-results-found="Aucun résultat n'a été trouvé pour {query}"
+          data-did-you-mean="Rechercher {suggestion}."
+          data-no-results-found-did-you-mean="Aucun résultat n’a été trouvé pour {query}. Voulez-vous dire {suggestion} ?"
+          data-results-found="{hitCount} résultats trouvés"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Français</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/fr-fr/ontap-family/index.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/ontap-family/index.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/ontap-family/index.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/ontap-family/index.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/ontap-family/index.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/ontap-family/index.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/ontap-family/index.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li></ul>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <div class="ie-main product-family"><div class="col-md-3">
+    <div class="product-family-linkheading">Filter by product function</div>
+    <ul id="product-family-links"><li class="active"><a href="#" class="product-family-space" data-tags="all,tag_data_management,tag_automation,tag_systems,tag_data_protection,tag_data_migration">Tout</a></li><li><a href="#" class="product-family-space" data-tags="tag_automation">Automatisation</a></li><li><a href="#" class="product-family-space" data-tags="tag_data_management">La gestion des données</a></li><li><a href="#" class="product-family-space" data-tags="tag_data_migration">Migration des données</a></li><li><a href="#" class="product-family-space" data-tags="tag_data_protection">Protection des données</a></li><li><a href="#" class="product-family-space" data-tags="tag_systems">Systèmes</a></li></ul>
+</div>
+<div class="tile-container">
+        <article class="page-content">
+            <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/fr-fr/ontap-family/images/expand.png" alt="Développer le panneau de navigation"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/fr-fr/ontap-family/">ONTAP</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+            <div class="n-band n-band--docs n-band--belted">
+                <div class="n-container" style="margin: 0 auto; padding: 0 16px;">
+                    <div class="n-row">                      
+                        <div class="n-col-sm-12"><div class="ie-nmt-disclaimer">
+                              <span>
+                                <div class="ie-nmt-disclaimer-container">
+                                  <div class="ie-nmt-disclaimer-icon">
+                                    <svg class="luci-icon" aria-hidden="true">
+                                      <use xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#circle-info">
+                                    </svg>
+                                  </div>
+                                  <div class="ie-nmt-disclaimer-content">
+                                    <span> La version française est une traduction automatique. La version anglaise prévaut sur la française en cas de divergence. </span>
+                                  </div>
+                                  <div style="clear:both;"></div>
+                                </div>
+                              </span>
+                            </div><div class="n-doc__component-detail-heading-wrap">
+                                <h1 class="n-doc__component-detail-heading">Documentation des produits ONTAP</h1>
+                            </div><section class="n-band__section">
+                                <p>ONTAP helps you create a storage infrastructure that reduces costs, accelerates critical workloads, and protects and secures data.</p>
+                            </section><div class="n-band__content">
+<div id="selected-sidelink"><span>Tout</span></div>
+    <div class="n-layout-flex product-family-tile-container" data-ntap-layout="4"><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_management, tag_data_protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-onprem.png" alt="ONTAP"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap/index.html'>ONTAP</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Déployez et gérez le logiciel de gestion de données ONTAP 9 dans votre data Center à l'aide de l'interface de ligne de commande ONTAP et des dernières versions de ONTAP System Manager (ONTAP 9.7 et versions ultérieures).</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_automation, tag_data_management">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-api.png" alt="Automatisation ONTAP"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-automation/index.html'>Automatisation ONTAP</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Automatisez le déploiement et l'administration de vos systèmes de stockage ONTAP avec l'API REST de ONTAP et les technologies sous-jacentes.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_management">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/cli.png" alt="Commandes ONTAP"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-cli-9111/'>Commandes ONTAP</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Découvrez les commandes disponibles dans l'interface de ligne de commandes de ONTAP.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/metrocluster.png" alt="ONTAP MetroCluster"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-metrocluster/'>ONTAP MetroCluster</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Protection du stockage grâce à la mise en cluster basée sur les baies avec réplication synchrone pour assurer une disponibilité continue.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_systems">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/groups_line.png" alt="Documentation AFF et FAS"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-systems-family/'>Documentation AFF et FAS</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Consultez la page de documentation AFF and FAS pour obtenir des informations sur l'installation, la maintenance et la mise à niveau de vos systèmes AFF et FAS, ainsi que de vos commutateurs de cluster et de stockage.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_management, tag_data_protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cvo.png" alt="Cloud Volumes ONTAP"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html'>Cloud Volumes ONTAP</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Déployez une instance virtuelle de ONTAP pour rendre le stockage cloud plus économique, intelligent, conforme et sécurisé.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_management">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/cli.png" alt="Référence ONTAP EMS"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-ems-9111/'>Référence ONTAP EMS</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Découvrez les événements du système de messagerie d'événements (EMS) dans ONTAP.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_management">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/server.png" alt="Configuration de l'hôte SAN ONTAP"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-sanhost/'>Configuration de l'hôte SAN ONTAP</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Configuration des hôtes SAN ONTAP pour les protocoles NVMe, iSCSI et FC</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_management">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/config_line.png" alt="ONTAP System Manager Classic"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-sm-classic/index.html'>ONTAP System Manager Classic</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">ONTAP 9.7 et versions antérieures utilisent une disposition différente pour l'interface de ONTAP System Manager.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_migration">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/transition-tools.png" alt="Transition vers ONTAP 7-mode"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-7mode-transition/'>Transition vers ONTAP 7-mode</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Faites évoluer vos données depuis la version 7-mode existante vers les plateformes de stockage en cluster modernes.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_migration">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/transition-tools.png" alt="Importation de LUN étrangères ONTAP"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-fli/'>Importation de LUN étrangères ONTAP</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Migrez des LUN à partir de baies tierces et de systèmes 7-mode vers une solution de stockage NetApp moderne.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_management, tag_data_protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/server.png" alt="ONTAP Select"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-select/'>ONTAP Select</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Déployez ONTAP en tant qu'appliance de stockage Software-defined sur des serveurs matériels génériques exécutant l'hyperviseur VMware ESXi.</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, tag_data_management">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/cli.png" alt="ONTAP FlexArray"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/ontap-flexarray/'>ONTAP FlexArray</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Utilisez des LUN de baies pour présenter des baies E-Series et tierces en tant que stockage desservi par ONTAP.</p>
+                </div>
+            </div>
+        </div></div>
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="page-nav-toolbar"></div>
+    <div style="clear:both"></div>
+</div>
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Conditions générales</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Paramètres de cookies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">Envoyer un avis à propos de cette page</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/fr-fr/ontap-family/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/fr-fr/ontap-family/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/fr-fr/ontap-family/js/prism.js'></script>
+      <script type="text/javascript" src='/fr-fr/ontap-family/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/fr-fr/ontap-family/js/www-ntap.js'></script>
+    <script src='/fr-fr/ontap-family/js/tabbed-blocks.js'></script>
+    <script src='/fr-fr/ontap-family/js/sidebar.js'></script>
+  </body></html>
