@@ -9,13 +9,11 @@
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="sidebar">Protection des données</block>
   <block id="d685640410801eb03bb5dcb58186458f" category="sidebar">Systèmes</block>
   <block id="253b40ae359ba25b56231803430c4873" category="sidebar">ONTAP</block>
-  <block id="9523e2611916570d7f12959f26121afb" category="sidebar">Déployez et gérez le logiciel de gestion de données ONTAP 9 dans votre data Center à l'aide de l'interface de ligne de commande ONTAP et des dernières versions de ONTAP System Manager (ONTAP 9.7 et versions ultérieures).</block>
   <block id="cd0da2f9fb1b99c1f4461a4e987db162" category="sidebar">Automatisez le déploiement et l'administration de vos systèmes de stockage ONTAP avec l'API REST de ONTAP et les technologies sous-jacentes.</block>
   <block id="4e562da2b893fe742016a3ccfd5b1e84" category="sidebar">Commandes ONTAP</block>
   <block id="eba31e011522d2a0e8531d2b46a4b64d" category="sidebar">Découvrez les commandes disponibles dans l'interface de ligne de commandes de ONTAP.</block>
   <block id="18f57d600a92c92b9c8e184c2871790b" category="sidebar">ONTAP MetroCluster</block>
   <block id="cbcc6364d2b3c7edb3a0d41c8e5f1f9f" category="sidebar">Protection du stockage grâce à la mise en cluster basée sur les baies avec réplication synchrone pour assurer une disponibilité continue.</block>
-  <block id="0491d39c17c58e82c7523e82200a4f42" category="sidebar">Consultez la page de documentation AFF and FAS pour obtenir des informations sur l'installation, la maintenance et la mise à niveau de vos systèmes AFF et FAS, ainsi que de vos commutateurs de cluster et de stockage.</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="f3230df50ceeeafc3157bee849693d34" category="sidebar">Déployez une instance virtuelle de ONTAP pour rendre le stockage cloud plus économique, intelligent, conforme et sécurisé.</block>
   <block id="59dd97bfc4b53a6590c009d9ab55aa67" category="sidebar">Découvrez les événements du système de messagerie d'événements (EMS) dans ONTAP.</block>
@@ -31,9 +29,11 @@
   <block id="f9aa27ce7eee83622fab3ac30475062f" category="sidebar">ONTAP FlexArray</block>
   <block id="ab7f0696fcd43dd1d59a411bec1bc90c" category="sidebar">Utilisez des LUN de baies pour présenter des baies E-Series et tierces en tant que stockage desservi par ONTAP.</block>
   <block id="3a77755c4eaf7897cda1f7db8e722428" category="sidebar">Automatisation ONTAP</block>
-  <block id="3da900eb43adce343acfa768b86ac0f6" category="sidebar">AFF A-Series et C-Series, FAS, baies 100 % SAN et commutateurs</block>
   <block id="4434424bd2c1011098a508e85df56b94" category="sidebar">Rapports techniques sur ONTAP</block>
   <block id="d723da57939eb06777c90702932db91d" category="sidebar">En savoir plus sur l'architecture ONTAP et sur la façon d'optimiser ONTAP pour des charges de travail et des environnements spécifiques.</block>
   <block id="27c7ca02055622739ea07ba1243d7683" category="sidebar">Référence EMS ONTAP</block>
   <block id="bc5ec30cd3249636e4dc6b792074194d" category="sidebar">Configuration de l'hôte SAN ONTAP</block>
+  <block id="00b58e662b325b5088592ef47840159f" category="sidebar">Déployez et gérez le logiciel de gestion des données ONTAP 9 dans votre data Center à l'aide de ONTAP System Manager et de l'interface de ligne de commande ONTAP.</block>
+  <block id="2df876fae9458ec6daf0b2557b22c32d" category="sidebar">AFF A-Series et C-Series, FAS, baies SAN 100 % Flash et commutateurs</block>
+  <block id="fd386f6a14ab83ad506ab4a919020a9f" category="sidebar">Découvrez comment installer, entretenir et mettre à niveau vos baies SAN AFF, FAS et 100 % Flash, ainsi que vos commutateurs de cluster et de stockage.</block>
 </blocks>

@@ -31,9 +31,9 @@ product-family:
   - title: ONTAP
     icon: "./media/icon-onprem.png"
     url: https://docs.netapp.com/us-en/ontap/index.html
-    summary: Déployez et gérez le logiciel de gestion de données ONTAP 9 dans votre
-      data Center à l'aide de l'interface de ligne de commande ONTAP et des dernières
-      versions de ONTAP System Manager (ONTAP 9.7 et versions ultérieures).
+    summary: Déployez et gérez le logiciel de gestion des données ONTAP 9 dans votre
+      data Center à l'aide de ONTAP System Manager et de l'interface de ligne de commande
+      ONTAP.
     tags: all, tag_data_management, tag_data_protection
   - title: Automatisation ONTAP
     icon: "./media/icon-api.png"
@@ -53,12 +53,11 @@ product-family:
     summary: Protection du stockage grâce à la mise en cluster basée sur les baies
       avec réplication synchrone pour assurer une disponibilité continue.
     tags: all, tag_data_protection
-  - title: AFF A-Series et C-Series, FAS, baies 100 % SAN et commutateurs
+  - title: AFF A-Series et C-Series, FAS, baies SAN 100 % Flash et commutateurs
     icon: "./media/groups_line.png"
     url: https://docs.netapp.com/us-en/ontap-systems-family/
-    summary: Consultez la page de documentation AFF and FAS pour obtenir des informations
-      sur l'installation, la maintenance et la mise à niveau de vos systèmes AFF et
-      FAS, ainsi que de vos commutateurs de cluster et de stockage.
+    summary: Découvrez comment installer, entretenir et mettre à niveau vos baies
+      SAN AFF, FAS et 100 % Flash, ainsi que vos commutateurs de cluster et de stockage.
     tags: all, tag_systems
   - title: Rapports techniques sur ONTAP
     icon: "./media/icon-onprem.png"
