@@ -18,7 +18,6 @@
   <block id="f3230df50ceeeafc3157bee849693d34" category="sidebar">Déployez une instance virtuelle de ONTAP pour rendre le stockage cloud plus économique, intelligent, conforme et sécurisé.</block>
   <block id="59dd97bfc4b53a6590c009d9ab55aa67" category="sidebar">Découvrez les événements du système de messagerie d'événements (EMS) dans ONTAP.</block>
   <block id="2aadcbf0b77f52d06244b76c0aea1a12" category="sidebar">Configuration des hôtes SAN ONTAP pour les protocoles NVMe, iSCSI et FC</block>
-  <block id="2e641d75d103df9a37ad7a7a9d2e632e" category="sidebar">ONTAP System Manager Classic</block>
   <block id="e2d007a557f8e11dbba3c27363a83bd6" category="sidebar">ONTAP 9.7 et versions antérieures utilisent une disposition différente pour l'interface de ONTAP System Manager.</block>
   <block id="99be5fa77d38c7d9e875422bad8e7925" category="sidebar">Transition vers ONTAP 7-mode</block>
   <block id="21cbfb811e4dbccffe41f111d35806c8" category="sidebar">Faites évoluer vos données depuis la version 7-mode existante vers les plateformes de stockage en cluster modernes.</block>
@@ -36,4 +35,5 @@
   <block id="00b58e662b325b5088592ef47840159f" category="sidebar">Déployez et gérez le logiciel de gestion des données ONTAP 9 dans votre data Center à l'aide de ONTAP System Manager et de l'interface de ligne de commande ONTAP.</block>
   <block id="2df876fae9458ec6daf0b2557b22c32d" category="sidebar">AFF A-Series et C-Series, FAS, baies SAN 100 % Flash et commutateurs</block>
   <block id="fd386f6a14ab83ad506ab4a919020a9f" category="sidebar">Découvrez comment installer, entretenir et mettre à niveau vos baies SAN AFF, FAS et 100 % Flash, ainsi que vos commutateurs de cluster et de stockage.</block>
+  <block id="e0ef07c311c3d529bf1db8e5c324d936" category="sidebar">Gestionnaire système ONTAP (ONTAP 9.7 et versions antérieures)</block>
 </blocks>
