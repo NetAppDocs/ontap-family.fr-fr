@@ -24,7 +24,6 @@
   <block id="3be720072e03679f7ed0f85258130b70" category="sidebar">Importation de LUN étrangères ONTAP</block>
   <block id="34f1e4137ff927efa23d8e07e433f9eb" category="sidebar">Migrez des LUN à partir de baies tierces et de systèmes 7-mode vers une solution de stockage NetApp moderne.</block>
   <block id="3a3a5cd068731551120f43f37950768b" category="sidebar">ONTAP Select</block>
-  <block id="8010c7fea7ec3a053ce59d083aa16df6" category="sidebar">Déployez ONTAP en tant qu'appliance de stockage Software-defined sur des serveurs matériels génériques exécutant l'hyperviseur VMware ESXi.</block>
   <block id="f9aa27ce7eee83622fab3ac30475062f" category="sidebar">ONTAP FlexArray</block>
   <block id="ab7f0696fcd43dd1d59a411bec1bc90c" category="sidebar">Utilisez des LUN de baies pour présenter des baies E-Series et tierces en tant que stockage desservi par ONTAP.</block>
   <block id="3a77755c4eaf7897cda1f7db8e722428" category="sidebar">Automatisation ONTAP</block>
@@ -36,4 +35,5 @@
   <block id="2df876fae9458ec6daf0b2557b22c32d" category="sidebar">AFF A-Series et C-Series, FAS, baies SAN 100 % Flash et commutateurs</block>
   <block id="fd386f6a14ab83ad506ab4a919020a9f" category="sidebar">Découvrez comment installer, entretenir et mettre à niveau vos baies SAN AFF, FAS et 100 % Flash, ainsi que vos commutateurs de cluster et de stockage.</block>
   <block id="e0ef07c311c3d529bf1db8e5c324d936" category="sidebar">Gestionnaire système ONTAP (ONTAP 9.7 et versions antérieures)</block>
+  <block id="e3084fa571ba538a7020720d0b9f200e" category="sidebar">Déployez ONTAP en tant qu'appliance de stockage Software-defined sur divers serveurs matériels génériques exécutant les hyperviseurs VMware ESXi ou KVM.</block>
 </blocks>

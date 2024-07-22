@@ -73,7 +73,7 @@ product-family:
     tags: all, tag_data_management, tag_data_protection
   - title: Référence EMS ONTAP
     icon: "./media/cli.png"
-    url: https://docs.netapp.com/us-en/ontap-ems-9141/
+    url: https://docs.netapp.com/us-en/ontap-ems/index.html
     summary: Découvrez les événements du système de messagerie d'événements (EMS)
       dans ONTAP.
     tags: all, tag_data_management
@@ -85,7 +85,7 @@ product-family:
     tags: all, tag_data_management
   - title: Gestionnaire système ONTAP (ONTAP 9.7 et versions antérieures)
     icon: "./media/config_line.png"
-    url: https://docs.netapp.com/us-en/ontap-sm-classic/index.html
+    url: https://docs.netapp.com/us-en/ontap-system-manager-classic/
     summary: ONTAP 9.7 et versions antérieures utilisent une disposition différente
       pour l'interface de ONTAP System Manager.
     tags: all, tag_data_management
@@ -105,7 +105,8 @@ product-family:
     icon: "./media/server.png"
     url: https://docs.netapp.com/us-en/ontap-select/
     summary: Déployez ONTAP en tant qu'appliance de stockage Software-defined sur
-      des serveurs matériels génériques exécutant l'hyperviseur VMware ESXi.
+      divers serveurs matériels génériques exécutant les hyperviseurs VMware ESXi
+      ou KVM.
     tags: all, tag_data_management, tag_data_protection
   - title: ONTAP FlexArray
     icon: "./media/cli.png"
