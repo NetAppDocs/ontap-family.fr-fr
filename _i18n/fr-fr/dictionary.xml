@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="e21da1a4879f106c0966dc2fe45126c0" category="summary">ONTAP vous aide à créer une infrastructure de stockage qui réduit les coûts, accélère les charges de travail stratégiques, protège et sécurise les données.</block>
   <block id="274bc582ca884fc158ea9ac9f79f9067" category="doc">Documentation des produits ONTAP</block>
   <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="sidebar">Tout</block>
   <block id="caea8340e2d186a540518d08602aa065" category="sidebar">Automatisation</block>
@@ -32,4 +31,5 @@
   <block id="942e7b614fd14bfa73ca3ead7a074727" category="sidebar">Installez votre système ASA r2 et gérez les données à l'aide de ONTAP.</block>
   <block id="8010c7fea7ec3a053ce59d083aa16df6" category="sidebar">Déployez ONTAP en tant qu'appliance de stockage Software-defined sur des serveurs matériels génériques exécutant l'hyperviseur VMware ESXi.</block>
   <block id="b2934159aedd460ca247425783b1dc65" category="sidebar">Migration des LUN à partir de baies tierces et de systèmes 7-mode vers un système de stockage NetApp moderne.</block>
+  <block id="6b5b170d11f85aa7605678eed04a62cf" category="sidebar">ONTAP vous aide à créer une infrastructure de stockage qui réduit les coûts, accélère les charges de travail stratégiques, protège et sécurise les données.</block>
 </blocks>

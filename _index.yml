@@ -1,0 +1,93 @@
+---
+product-family:
+  title: Documentation des produits ONTAP
+  lead: ONTAP vous aide à créer une infrastructure de stockage qui réduit les coûts,
+    accélère les charges de travail stratégiques, protège et sécurise les données.
+  summary: ONTAP vous aide à créer une infrastructure de stockage qui réduit les coûts,
+    accélère les charges de travail stratégiques, protège et sécurise les données.
+  sidebarlinks:
+  - title: Tout
+    tags: all
+    class: active
+  - title: Automatisation
+    tags: automation
+  - title: La gestion des données
+    tags: management
+  - title: Migration des données
+    tags: migration
+  - title: Protection des données
+    tags: protection
+  - title: Systèmes matériels
+    tags: hardware
+  tiles:
+  - title: ONTAP 9 pour les systèmes AFF, ASA et FAS
+    icon: "./media/icon-onprem.png"
+    url: "../ontap/index.html"
+    summary: Utilisez le logiciel ONTAP pour gérer les données de vos systèmes FAS
+      100 % Flash, de vos baies SAN 100 % Flash et de vos baies Flash hybrides FAS.
+    tags: all, management, protection
+  - title: AFF, ASA et FAS
+    icon: "./media/groups_line.png"
+    url: "../ontap-systems-family/index.html"
+    summary: Découvrez comment installer, entretenir et mettre à niveau des systèmes
+      FAS 100 % Flash, des baies SAN 100 % Flash et des baies Flash hybrides FAS.
+    tags: all, hardware
+  - title: Systèmes ASA r2
+    icon: "./media/groups_line.png"
+    url: "../asa-r2/index.html"
+    summary: Installez votre système ASA r2 et gérez les données à l'aide de ONTAP.
+    tags: all, hardware
+  - title: ONTAP MetroCluster
+    icon: "./media/metrocluster.png"
+    url: "../ontap-metrocluster/index.html"
+    summary: Protection du stockage grâce à la mise en cluster basée sur les baies
+      avec réplication synchrone pour assurer une disponibilité continue.
+    tags: all, protection
+  - title: Configuration de l'hôte SAN ONTAP
+    icon: "./media/server.png"
+    url: "../ontap-sanhost/index.html"
+    summary: Configuration des hôtes SAN ONTAP pour les protocoles NVMe, iSCSI et
+      FC
+    tags: all, management
+  - title: Rapports techniques sur ONTAP
+    icon: "./media/icon-onprem.png"
+    url: "../ontap-technical-reports/index.html"
+    summary: En savoir plus sur l'architecture ONTAP et sur la façon d'optimiser ONTAP
+      pour des charges de travail et des environnements spécifiques.
+    tags: all, management, protection
+  - title: Commandes ONTAP
+    icon: "./media/cli.png"
+    url: https://docs.netapp.com/us-en/ontap-cli/index.html
+    summary: Découvrez les commandes disponibles dans l'interface de ligne de commandes
+      de ONTAP.
+    tags: all, management
+  - title: Référence EMS ONTAP
+    icon: "./media/cli.png"
+    url: https://docs.netapp.com/us-en/ontap-ems/index.html
+    summary: Découvrez les événements du système de messagerie d'événements (EMS)
+      dans ONTAP.
+    tags: all, management
+  - title: Automatisation ONTAP
+    icon: "./media/icon-api.png"
+    url: "../ontap-automation/index.html"
+    summary: Automatisez le déploiement et l'administration de vos systèmes de stockage
+      ONTAP avec l'API REST de ONTAP et les technologies sous-jacentes.
+    tags: all, automation, management
+  - title: Cloud Volumes ONTAP
+    icon: "./media/icon-cvo.png"
+    url: "../cloud-manager-cloud-volumes-ontap/index.html"
+    summary: Déployez une instance virtuelle de ONTAP pour rendre le stockage cloud
+      plus économique, intelligent, conforme et sécurisé.
+    tags: all, management, protection
+  - title: ONTAP Select
+    icon: "./media/server.png"
+    url: "../ontap-select/index.html"
+    summary: Déployez ONTAP en tant qu'appliance de stockage Software-defined sur
+      des serveurs matériels génériques exécutant l'hyperviseur VMware ESXi.
+    tags: all, management, protection
+  - title: Importation de LUN étrangères ONTAP
+    icon: "./media/transition-tools.png"
+    url: "../ontap-fli/index.html"
+    summary: Migration des LUN à partir de baies tierces et de systèmes 7-mode vers
+      un système de stockage NetApp moderne.
+    tags: all, migration
