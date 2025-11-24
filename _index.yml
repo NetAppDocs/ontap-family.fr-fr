@@ -85,6 +85,7 @@ product-family:
   - title: ONTAP Select
     icon: "./media/server.png"
     url: "../ontap-select/index.html"
-    summary: Déployez ONTAP en tant qu'appliance de stockage Software-defined sur
-      des serveurs matériels génériques exécutant l'hyperviseur VMware ESXi.
+    summary: Déployez ONTAP en tant qu'appliance de stockage définie par logiciel
+      sur une variété de serveurs matériels standard exécutant des hyperviseurs VMware
+      ESXi ou KVM.
     tags: all, management, protection
